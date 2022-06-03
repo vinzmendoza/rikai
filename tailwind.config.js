@@ -6,9 +6,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      sm: "800px",
-    },
     extend: {
       keyframes: {
         slide: {
@@ -19,11 +16,15 @@ module.exports = {
       animation: {
         "slide-up": "slide 0.3s ease-in-out",
       },
+      screens: {
+        xs: "600px",
+        sm: "800px",
+        md: "960px",
+      },
     },
   },
   plugins: [
     plugin(function (helpers) {
-      // variants that help styling Radix-UI components
       dataStateVariant("open", helpers);
       dataStateVariant("closed", helpers);
       dataStateVariant("on", helpers);
@@ -34,13 +35,7 @@ module.exports = {
   ],
 };
 
-function dataStateVariant(
-  state,
-  {
-    addVariant, // for registering custom variants
-    e, // for manually escaping strings meant to be used in class names
-  }
-) {
+function dataStateVariant(state, { addVariant, e }) {
   addVariant(`data-state-${state}`, ({ modifySelectors, separator }) => {
     modifySelectors(({ className }) => {
       return `.${e(
