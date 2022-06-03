@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 
 const PageLayout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-full sm:flex-row sm:gap-x-4">
-      <div className="flex flex-col sm:items-end sm:basis-1/6 sm:ml-4">
+    <div className="flex flex-col min-h-full sm:flex-row sm:gap-x-4 sm:max-w-[96rem] sm:mx-auto">
+      <div className="flex flex-col sm:items-end sm:basis-1/6 sm:ml-12">
         <div className="fixed justify-between h-full sm:flex sm:flex-col">
           <Search />
         </div>
