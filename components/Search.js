@@ -64,53 +64,53 @@ const Search = () => {
       `/kanji?${
         (data.englishMeaning
           ? Object.keys(data)[0] === firstQueryParam
-            ? "kem=" + data.englishMeaning
-            : "&kem=" + data.englishMeaning
+            ? "kem=" + data.englishMeaning.toLowerCase()
+            : "&kem=" + data.englishMeaning.toLowerCase()
           : "") +
         (data.kanji
           ? Object.keys(data)[1] === firstQueryParam
-            ? "kan=" + data.kanji
-            : "&kan=" + data.kanji
+            ? "kan=" + data.kanji.toLowerCase()
+            : "&kan=" + data.kanji.toLowerCase()
           : "") +
         (data.onyomi
           ? Object.keys(data)[2] === firstQueryParam
-            ? "on=" + data.onyomi
-            : "&on=" + data.onyomi
+            ? "on=" + data.onyomi.toLowerCase()
+            : "&on=" + data.onyomi.toLowerCase()
           : "") +
         (data.kunyomi
           ? Object.keys(data)[3] === firstQueryParam
-            ? "kun=" + data.kunyomi
-            : "&kun=" + data.kunyomi
+            ? "kun=" + data.kunyomi.toLowerCase()
+            : "&kun=" + data.kunyomi.toLowerCase()
           : "") +
         (data.kanjiStrokeNo
           ? Object.keys(data)[4] === firstQueryParam
-            ? "ks=" + data.kanjiStrokeNo
-            : "&ks=" + data.kanjiStrokeNo
+            ? "ks=" + data.kanjiStrokeNo.toLowerCase()
+            : "&ks=" + data.kanjiStrokeNo.toLowerCase()
           : "") +
         (data.radicalJpName
           ? Object.keys(data)[5] === firstQueryParam
-            ? "rjn=" + data.radicalJpName
-            : "&rjn=" + data.radicalJpName
+            ? "rjn=" + data.radicalJpName.toLowerCase()
+            : "&rjn=" + data.radicalJpName.toLowerCase()
           : "") +
         (data.radicalEnMeaning
           ? Object.keys(data)[6] === firstQueryParam
-            ? "rem=" + data.radicalEnMeaning
-            : "&rem=" + data.radicalEnMeaning
+            ? "rem=" + data.radicalEnMeaning.toLowerCase()
+            : "&rem=" + data.radicalEnMeaning.toLowerCase()
           : "") +
         (data.radicalStrokeNo
           ? Object.keys(data)[7] === firstQueryParam
-            ? "rs=" + data.radicalStrokeNo
-            : "&rs=" + data.radicalStrokeNo
+            ? "rs=" + data.radicalStrokeNo.toLowerCase()
+            : "&rs=" + data.radicalStrokeNo.toLowerCase()
           : "") +
         (data.radicalPosition
           ? Object.keys(data)[8] === firstQueryParam
-            ? "rpos=" + data.radicalPosition
-            : "&rpos=" + data.radicalPosition
+            ? "rpos=" + data.radicalPosition.toLowerCase()
+            : "&rpos=" + data.radicalPosition.toLowerCase()
           : "") +
         (data.gradeLevel
           ? Object.keys(data)[9] === firstQueryParam
-            ? "grade=" + data.gradeLevel
-            : "&grade=" + data.gradeLevel
+            ? "grade=" + data.gradeLevel.toLowerCase()
+            : "&grade=" + data.gradeLevel.toLowerCase()
           : "")
       }`
     );

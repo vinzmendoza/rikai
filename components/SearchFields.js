@@ -1,12 +1,21 @@
 import Label from "./Label";
+import Tooltip from "./Tooltip";
 
 const SearchFields = ({ register }) => {
   return (
     <div className="flex flex-col gap-y-4">
       <div className="flex flex-col">
-        <Label htmlFor="englishMeaning" style="text-sm text-neutral-400 mb-2">
-          English Meaning
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="englishMeaning" style="text-sm text-neutral-400 mb-2">
+            English Meaning
+          </Label>
+          <Tooltip>
+            English meaning of the kanji
+            <br />
+            ex. <span className="font-bold">house</span>{" "}
+          </Tooltip>
+        </div>
+
         <input
           type="text"
           {...register("englishMeaning")}
@@ -16,9 +25,15 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="kanji" style="text-sm text-neutral-400 mb-2">
-          Kanji
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="kanji" style="text-sm text-neutral-400 mb-2">
+            Kanji
+          </Label>
+          <Tooltip>
+            Kanji character <br />
+            ex. <span className="font-bold">屋</span>{" "}
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("kanji")}
@@ -28,9 +43,17 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="onyomi" style="text-sm text-neutral-400 mb-2">
-          Onyomi
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="onyomi" style="text-sm text-neutral-400 mb-2">
+            Onyomi
+          </Label>
+          <Tooltip>
+            Onyomi in katakana or romaji
+            <br />
+            ex. <span className="font-bold">オク</span> or{" "}
+            <span className="font-bold">oku</span>
+          </Tooltip>
+        </div>
         <input
           {...register("onyomi")}
           type="text"
@@ -40,9 +63,17 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="kunyomi" style="text-sm text-neutral-400 mb-2">
-          Kunyomi
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="kunyomi" style="text-sm text-neutral-400 mb-2">
+            Kunyomi
+          </Label>
+          <Tooltip>
+            Kunyomi in hiragana or romaji
+            <br />
+            ex. <span className="font-bold">や</span> or{" "}
+            <span className="font-bold">ya</span>
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("kunyomi")}
@@ -52,9 +83,17 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="kanjiStrokeNo" style="text-sm text-neutral-400 mb-2">
-          Kanji Stroke #
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="kanjiStrokeNo" style="text-sm text-neutral-400 mb-2">
+            Kanji Stroke Number
+          </Label>
+          <Tooltip>
+            Total number of strokes of the kanji
+            <br />
+            ex. <span className="font-bold">3</span>{" "}
+          </Tooltip>
+        </div>
+
         <input
           type="text"
           {...register("kanjiStrokeNo")}
@@ -64,9 +103,16 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="radicalJpName" style="text-sm text-neutral-400 mb-2">
-          Radical Japanese Name
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="radicalJpName" style="text-sm text-neutral-400 mb-2">
+            Radical Japanese Name
+          </Label>
+          <Tooltip>
+            Radical in hiragana or romaji <br />
+            ex. <span className="font-bold">しかばね</span> or
+            <span className="font-bold"> shikabane</span>
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("radicalJpName")}
@@ -76,9 +122,19 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="radicalEnMeaning" style="text-sm text-neutral-400 mb-2">
-          Radical English Meaning
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label
+            htmlFor="radicalEnMeaning"
+            style="text-sm text-neutral-400 mb-2"
+          >
+            Radical English Meaning
+          </Label>
+          <Tooltip>
+            English meaning of the radical
+            <br />
+            ex. <span className="font-bold">awning</span>
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("radicalEnMeaning")}
@@ -88,9 +144,19 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="radicalStrokeNo" style="text-sm text-neutral-400 mb-2">
-          Radical Stroke Number
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label
+            htmlFor="radicalStrokeNo"
+            style="text-sm text-neutral-400 mb-2"
+          >
+            Radical Stroke Number
+          </Label>
+          <Tooltip>
+            Total number strokes of the radical
+            <br />
+            ex. <span className="font-bold">3</span>{" "}
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("radicalStrokeNo")}
@@ -100,9 +166,20 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="radicalPosition" style="text-sm text-neutral-400 mb-2">
-          Radical Position
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label
+            htmlFor="radicalPosition"
+            style="text-sm text-neutral-400 mb-2"
+          >
+            Radical Position
+          </Label>
+          <Tooltip>
+            Radical position in hiragana or romaji
+            <br />
+            ex. <span className="font-bold">たれ</span> or{" "}
+            <span className="font-bold">tare</span>
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("radicalPosition")}
@@ -112,9 +189,15 @@ const SearchFields = ({ register }) => {
       </div>
 
       <div className="flex flex-col">
-        <Label htmlFor="gradeLevel" style="text-sm text-neutral-400 mb-2">
-          Grade Level
-        </Label>
+        <div className="flex flex-row items-center">
+          <Label htmlFor="gradeLevel" style="text-sm text-neutral-400 mb-2">
+            Grade Level
+          </Label>
+          <Tooltip>
+            Grade level when the kanji is taught <br />
+            ex. <span className="font-bold">3</span>{" "}
+          </Tooltip>
+        </div>
         <input
           type="text"
           {...register("gradeLevel")}
