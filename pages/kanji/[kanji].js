@@ -17,6 +17,8 @@ const KanjiInfo = ({ data }) => {
     audio.play();
   };
 
+  console.log(data);
+
   return (
     <PageLayout>
       <div className="mb-16">
@@ -70,27 +72,30 @@ const KanjiInfo = ({ data }) => {
               <p className="italic">{data.radical.meaning.english}</p>
             </div>
           </div>
-          <div className="flex flex-row gap-x-4">
-            <div className="flex flex-col gap-y-4">
-              <h3 className=" text-neutral-500">Strokes</h3>
-              <p>{data.radical.strokes}</p>
-            </div>
-            <div className="flex flex-col gap-y-4 ">
-              <h3 className="text-neutral-500">Position</h3>
-              {data.radical.position.icon ? (
-                <div className="">
-                  <NextImage
-                    src={data.radical.position.icon}
-                    alt="radical"
-                    height={16}
-                    width={16}
-                    className="invert"
-                  />
+
+          <div className="flex flex-col gap-y-4">
+            <h3 className=" text-neutral-500">Strokes</h3>
+            <p>{data.radical.strokes}</p>
+          </div>
+          <div className="flex flex-col gap-y-4 ">
+            <h3 className="text-neutral-500">Position</h3>
+            {data.radical.position.icon ? (
+              <div className="flex flex-row items-center gap-x-4">
+                <NextImage
+                  src={data.radical.position.icon}
+                  alt="radical"
+                  height={16}
+                  width={16}
+                  className="invert"
+                />
+                <div className="flex flex-col ">
+                  <p className="">{data.radical.position.hiragana}</p>
+                  <p className="">{data.radical.position.romaji}</p>
                 </div>
-              ) : (
-                <p>N/A</p>
-              )}
-            </div>
+              </div>
+            ) : (
+              <p>N/A</p>
+            )}
           </div>
         </div>
 
