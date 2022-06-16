@@ -15,9 +15,9 @@ const KanjiList = ({ data }) => {
   return (
     <PageLayout>
       <div className="mb-4">
-        <h2 className="text-xl font-bold">Search Results</h2>
+        <h2 className="text-xl font-semibold ">Search Results</h2>
         <p className="text-sm italic text-neutral-400">
-          Found {data.length.toString()} matches
+          Found {data.length.toString()} {data.length > 1 ? "matches" : "match"}
         </p>
       </div>
 
@@ -25,10 +25,12 @@ const KanjiList = ({ data }) => {
         {sortedKanji.map((item) => (
           <li
             key={item.kanji.character}
-            className="p-2 transition ease-in-out rounded cursor-pointer hover:bg-neutral-600"
+            className="p-2 transition ease-in-out rounded cursor-pointer hover:bg-neutral-600 "
           >
             <NextLink href={`/kanji/${item.kanji.character}`} passHref>
-              <a className="text-4xl font-thin">{item.kanji.character}</a>
+              <a className="text-4xl font-light font-mplus1">
+                {item.kanji.character}
+              </a>
             </NextLink>
           </li>
         ))}
