@@ -12,7 +12,7 @@ const ProgressBar = ({ progress, handleVideoProgress }) => {
       <SliderPrimitive.Track className="relative h-[3px] grow bg-neutral-600 rounded-[9999px]">
         <SliderPrimitive.Range className="absolute h-full rounded-[9999px] bg-neutral-100 " />
       </SliderPrimitive.Track>
-      <SliderPrimitive.Thumb className="block w-[20px] h-[20px] rounded-[10px] bg-neutral-100" />
+      <SliderPrimitive.Thumb className="block w-[20px] h-[20px] rounded-full bg-neutral-100 cursor-pointer hover:bg-neutral-400" />
     </SliderPrimitive.Root>
   );
 };

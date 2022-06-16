@@ -18,7 +18,7 @@ const VideoPlayer = ({ videoUrl }) => {
   return (
     <>
       <div className="flex flex-col gap-y-4">
-        <h3 className="text-neutral-500">Kanji Demo</h3>
+        <h3 className="text-lg font-semibold text-neutral-500">Kanji Demo</h3>
         <video
           className="rounded invert"
           ref={videoRef}

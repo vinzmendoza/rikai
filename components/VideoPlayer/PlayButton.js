@@ -3,9 +3,9 @@ const PlayButton = ({ handleVideoPlaying, isPlaying }) => {
   return (
     <button onClick={handleVideoPlaying}>
       {isPlaying ? (
-        <PauseIcon className="w-6 h-6 mr-2" />
+        <PauseIcon className="w-6 h-6 mr-2 hover:text-neutral-400" />
       ) : (
-        <PlayIcon className="w-6 h-6 mr-2" />
+        <PlayIcon className="w-6 h-6 mr-2 hover:text-neutral-400" />
       )}
     </button>
   );
