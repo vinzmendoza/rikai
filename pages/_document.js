@@ -9,7 +9,15 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head></Head>
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/MPLUS1-Light.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin
+          />
+        </Head>
         <body className="bg-neutral-900 text-neutral-50">
           <Main />
           <NextScript />

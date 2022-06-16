@@ -7,3 +7,11 @@ body,
 #__next {
   height: 100%;
 }
+
+@font-face {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 300;
+  font-display: optional;
+  src: url(/fonts/MPLUS1-Light.ttf) format("ttf");
+}

@@ -21,6 +21,9 @@ module.exports = {
         sm: "830px",
         md: "960px",
       },
+      fontFamily: {
+        mplus1: ["'M PLUS 1'", "sans-serif"],
+      },
     },
   },
   plugins: [
