@@ -2,7 +2,7 @@ import PageLayout from "../components/PageLayout";
 
 const Home = () => {
   return (
-    <PageLayout>
+    <PageLayout pageTitle="Home">
       <div className="flex flex-col w-full my-12 sm:my-16">
         <div className="flex flex-col max-w-md flex-start gap-y-16">
           <div className="flex flex-col gap-y-4">
@@ -29,6 +29,8 @@ const Home = () => {
               <a
                 href="https://app.kanjialive.com/search"
                 className="text-blue-500 hover:underline"
+                target="_blank"
+                rel="noreferrer"
               >
                 here
               </a>{" "}
@@ -36,6 +38,8 @@ const Home = () => {
               <a
                 href="https://app.kanjialive.com/api/docs"
                 className="text-blue-500 hover:underline"
+                target="_blank"
+                rel="noreferrer"
               >
                 here
               </a>{" "}

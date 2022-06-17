@@ -13,7 +13,7 @@ const KanjiList = ({ data }) => {
   const sortedKanji = data.sort((a, b) => a.kanji.stroke - b.kanji.stroke);
 
   return (
-    <PageLayout>
+    <PageLayout pageTitle="Search Result">
       <div className="mb-4">
         <h2 className="text-xl font-semibold ">Search Results</h2>
         <p className="text-sm italic text-neutral-400">

@@ -20,7 +20,7 @@ const KanjiInfo = ({ data }) => {
   console.log(data);
 
   return (
-    <PageLayout>
+    <PageLayout pageTitle={data.kanji.character}>
       <div className="mb-16">
         <button
           className="flex flex-row items-center hover:text-neutral-400"

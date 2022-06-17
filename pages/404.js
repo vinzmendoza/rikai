@@ -1,5 +1,7 @@
 import PageLayout from "../components/PageLayout";
 
 export default function Error404() {
-  return <PageLayout>404 - Page Not Found</PageLayout>;
+  return (
+    <PageLayout pageTitle="404 Page Not Found">404 - Page Not Found</PageLayout>
+  );
 }
