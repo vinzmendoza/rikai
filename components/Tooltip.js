@@ -3,7 +3,7 @@ import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 const Tooltip = ({ children }) => {
   return (
-    <TooltipPrimitive.Provider>
+    <TooltipPrimitive.Provider delayDuration={100}>
       <TooltipPrimitive.Root>
         <TooltipPrimitive.Trigger
           asChild
