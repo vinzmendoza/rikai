@@ -20,7 +20,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("englishMeaning")}
           id="englishMeaning"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -38,7 +38,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("kanji")}
           id="kanji"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -58,7 +58,7 @@ const SearchFields = ({ register }) => {
           {...register("onyomi")}
           type="text"
           id="onyomi"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -78,7 +78,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("kunyomi")}
           id="kunyomi"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -98,7 +98,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("kanjiStrokeNo")}
           id="kanjiStrokeNo"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -117,7 +117,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("radicalJpName")}
           id="radicalJpName"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -139,7 +139,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("radicalEnMeaning")}
           id="radicalEnMeaning"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -161,7 +161,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("radicalStrokeNo")}
           id="radicalStrokeNo"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -184,7 +184,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("radicalPosition")}
           id="radicalPosition"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
 
@@ -202,7 +202,7 @@ const SearchFields = ({ register }) => {
           type="text"
           {...register("gradeLevel")}
           id="gradeLevel"
-          className="w-full px-2 py-1 border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
+          className="w-full px-2 py-1 transition duration-200 ease-in-out border rounded appearance-none border-neutral-600 bg-neutral-800 focus:outline-none focus:border-blue-400"
         />
       </div>
     </div>

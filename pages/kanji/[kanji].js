@@ -23,7 +23,7 @@ const KanjiInfo = ({ data }) => {
     <PageLayout pageTitle={data.kanji.character}>
       <div className="mb-16">
         <button
-          className="flex flex-row items-center hover:text-neutral-400"
+          className="flex flex-row items-center transition duration-200 ease-in-out hover:text-neutral-400"
           onClick={() => router.back()}
         >
           <ArrowLeftIcon className="w-6 h-6 mr-2" /> Back
@@ -138,7 +138,7 @@ const KanjiInfo = ({ data }) => {
                   </audio>
                   <PlayIcon
                     onClick={() => playAudio(example.audio.mp3)}
-                    className="w-6 h-6 cursor-pointer justify-self-end hover:text-neutral-500"
+                    className="w-6 h-6 transition duration-200 ease-in-out cursor-pointer justify-self-end hover:text-neutral-500"
                   />
                 </div>
                 <p className="italic text-neutral-500">

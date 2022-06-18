@@ -25,7 +25,7 @@ const KanjiList = ({ data }) => {
         {sortedKanji.map((item) => (
           <li
             key={item.kanji.character}
-            className="p-2 transition ease-in-out rounded cursor-pointer hover:bg-neutral-600 "
+            className="p-2 transition duration-200 ease-in-out rounded cursor-pointer hover:bg-neutral-600 "
           >
             <NextLink href={`/kanji/${item.kanji.character}`} passHref>
               <a className="text-4xl font-light font-mplus1">

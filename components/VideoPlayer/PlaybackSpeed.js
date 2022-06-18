@@ -20,7 +20,7 @@ const PlaybackSpeed = () => {
     >
       <SelectPrimitive.Trigger
         aria-label="Playback Speed"
-        className="flex flex-row items-center justify-end ml-2"
+        className="flex flex-row items-center justify-end px-2 py-1 ml-2 transition duration-200 ease-in-out rounded hover:bg-neutral-600"
       >
         <SelectPrimitive.Value />
         <SelectPrimitive.Icon>

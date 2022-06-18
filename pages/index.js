@@ -28,7 +28,7 @@ const Home = () => {
               and the web application by clicking{" "}
               <a
                 href="https://app.kanjialive.com/search"
-                className="text-blue-500 hover:underline"
+                className="text-blue-400 transition duration-200 ease-in-out hover:text-blue-500"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -37,7 +37,7 @@ const Home = () => {
               and{" "}
               <a
                 href="https://app.kanjialive.com/api/docs"
-                className="text-blue-500 hover:underline"
+                className="text-blue-400 transition duration-200 ease-in-out hover:text-blue-500"
                 target="_blank"
                 rel="noreferrer"
               >

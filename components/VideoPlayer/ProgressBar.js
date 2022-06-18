@@ -9,10 +9,10 @@ const ProgressBar = ({ progress, handleVideoProgress }) => {
       className="relative flex items-center w-full h-[20px]"
       onValueChange={(e) => handleVideoProgress(e[0])}
     >
-      <SliderPrimitive.Track className="relative h-[3px] grow bg-neutral-600 rounded-[9999px]">
-        <SliderPrimitive.Range className="absolute h-full rounded-[9999px] bg-neutral-100 " />
+      <SliderPrimitive.Track className="relative h-[3px] grow bg-neutral-600 rounded-[9999px] cursor-pointer">
+        <SliderPrimitive.Range className="absolute h-full rounded-[9999px] bg-neutral-100  cursor-pointer" />
       </SliderPrimitive.Track>
-      <SliderPrimitive.Thumb className="block w-[20px] h-[20px] rounded-full bg-neutral-100 cursor-pointer hover:bg-neutral-400" />
+      <SliderPrimitive.Thumb className="block w-[20px] h-[20px] rounded-full bg-neutral-100 cursor-pointer hover:bg-neutral-400 transition duration-200 ease-in-out" />
     </SliderPrimitive.Root>
   );
 };

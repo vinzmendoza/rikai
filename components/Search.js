@@ -130,14 +130,14 @@ const Search = () => {
           <button
             type="button"
             onClick={() => reset()}
-            className="w-full px-3 py-2 bg-orange-500 rounded hover:bg-orange-600"
+            className="w-full px-3 py-2 transition duration-200 ease-in-out bg-orange-500 rounded hover:bg-orange-600"
           >
             Reset
           </button>
           <button
             type="submit"
             onClick={handleSubmit(onSearch)}
-            className="w-full px-3 py-2 bg-blue-500 rounded hover:bg-blue-600"
+            className="w-full px-3 py-2 transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
           >
             Search
           </button>
@@ -149,7 +149,7 @@ const Search = () => {
         onOpenChange={() => setIsOpen(!isOpen)}
       >
         <DialogPrimitive.Trigger asChild>
-          <button className="fixed bottom-0 right-0 p-2 mb-4 mr-4 bg-blue-500 rounded sm:hidden">
+          <button className="fixed bottom-0 right-0 p-2 mb-4 mr-4 transition duration-200 ease-in-out bg-blue-400 rounded hover:bg-blue-500 sm:hidden">
             <span className="flex flex-row items-center justify-center gap-x-2">
               <MagnifyingGlassIcon />
               Search
@@ -175,7 +175,7 @@ const Search = () => {
               <button
                 type="button"
                 onClick={() => reset()}
-                className="w-full px-3 py-2 bg-orange-500 rounded hover:bg-orange-600"
+                className="w-full px-3 py-2 transition duration-200 ease-in-out bg-orange-500 rounded hover:bg-orange-600"
               >
                 Reset
               </button>
@@ -183,7 +183,7 @@ const Search = () => {
                 <button
                   type="submit"
                   onClick={handleSubmit(onSearch)}
-                  className="flex justify-center w-full p-2 bg-blue-500 rounded hover:bg-blue-600"
+                  className="flex justify-center w-full p-2 transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
                 >
                   Submit
                 </button>
