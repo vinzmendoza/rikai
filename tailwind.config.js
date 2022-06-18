@@ -12,9 +12,14 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(100%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        slightSlideUp: {
+          "0%": { opacity: 0, transform: "translateY(2px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
       },
       animation: {
         "slide-up": "slide 0.3s ease-in-out",
+        "slight-slide-up": "slightSlideUp 0.3s ease-in-out",
       },
       screens: {
         xs: "600px",

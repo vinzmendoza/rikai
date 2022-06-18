@@ -11,7 +11,7 @@ const Tooltip = ({ children }) => {
         >
           <InfoCircledIcon />
         </TooltipPrimitive.Trigger>
-        <TooltipPrimitive.Content className="p-2 text-sm rounded bg-neutral-700">
+        <TooltipPrimitive.Content className="p-2 text-sm rounded bg-neutral-700 animate-slight-slide-up">
           {children}
         </TooltipPrimitive.Content>
       </TooltipPrimitive.Root>
