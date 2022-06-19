@@ -11,7 +11,7 @@ const KanjiInfo = ({ data }) => {
 
   if (data.error)
     return (
-      <PageLayout pageTitle="">
+      <PageLayout pageTitle="Kanji Not Found">
         <div className="flex flex-row items-center justify-center h-full gap-x-8">
           <div className="flex flex-col items-start justify-center my-1/2 gap-y-8">
             <div className="">
