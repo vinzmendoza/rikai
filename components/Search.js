@@ -149,9 +149,9 @@ const Search = () => {
         onOpenChange={() => setIsOpen(!isOpen)}
       >
         <DialogPrimitive.Trigger asChild>
-          <button className="fixed bottom-0 right-0 p-2 mb-4 mr-4 transition duration-200 ease-in-out bg-blue-400 rounded hover:bg-blue-500 sm:hidden">
-            <span className="flex flex-row items-center justify-center gap-x-2">
-              <MagnifyingGlassIcon />
+          <button className="fixed bottom-0 right-0 p-2 mb-4 mr-4 transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600 sm:hidden">
+            <span className="flex flex-row items-center justify-center font-bold gap-x-2">
+              <MagnifyingGlassIcon className="w-5 h-5" />
               Search
             </span>
           </button>
