@@ -138,7 +138,7 @@ const KanjiInfo = ({ data }) => {
                   </audio>
                   <PlayIcon
                     onClick={() => playAudio(example.audio.mp3)}
-                    className="w-6 h-6 transition duration-200 ease-in-out cursor-pointer justify-self-end hover:text-neutral-500"
+                    className="w-6 h-6 transition duration-200 ease-in-out cursor-pointer justify-self-end hover:text-teal-500"
                   />
                 </div>
                 <p className="italic text-neutral-500">

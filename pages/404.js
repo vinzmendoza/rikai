@@ -20,7 +20,7 @@ export default function Error404() {
 
           <div className="items-start">
             <NextLink asChild href="/">
-              <a className="px-4 py-1 text-sm font-bold transition duration-200 ease-in-out bg-teal-600 rounded cursor-pointer gap-x-2 hover:bg-teal-800">
+              <a className="px-4 py-1 text-sm font-bold transition duration-200 ease-in-out bg-teal-600 rounded cursor-pointer gap-x-2 hover:bg-teal-700">
                 Return home
               </a>
             </NextLink>

@@ -130,14 +130,14 @@ const Search = () => {
           <button
             type="button"
             onClick={() => reset()}
-            className="w-full px-3 py-2 transition duration-200 ease-in-out bg-orange-500 rounded hover:bg-orange-600"
+            className="w-full px-3 py-2 font-bold transition duration-200 ease-in-out bg-orange-500 rounded hover:bg-orange-600"
           >
             Reset
           </button>
           <button
             type="submit"
             onClick={handleSubmit(onSearch)}
-            className="w-full px-3 py-2 transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
+            className="w-full px-3 py-2 font-bold transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
           >
             Search
           </button>
@@ -175,7 +175,7 @@ const Search = () => {
               <button
                 type="button"
                 onClick={() => reset()}
-                className="w-full px-3 py-2 transition duration-200 ease-in-out bg-orange-500 rounded hover:bg-orange-600"
+                className="w-full px-3 py-2 font-bold transition duration-200 ease-in-out bg-orange-500 rounded hover:bg-orange-600"
               >
                 Reset
               </button>
@@ -183,7 +183,7 @@ const Search = () => {
                 <button
                   type="submit"
                   onClick={handleSubmit(onSearch)}
-                  className="flex justify-center w-full p-2 transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
+                  className="flex justify-center w-full p-2 font-bold transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
                 >
                   Submit
                 </button>
