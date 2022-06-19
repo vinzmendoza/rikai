@@ -9,7 +9,32 @@ import Steps from "../../components/VideoPlayer/Steps";
 const KanjiInfo = ({ data }) => {
   const router = useRouter();
 
-  if (data.error) return <PageLayout>No Data</PageLayout>;
+  if (data.error)
+    return (
+      <PageLayout pageTitle="">
+        <div className="flex flex-row items-center justify-center h-full gap-x-8">
+          <div className="flex flex-col items-start justify-center my-1/2 gap-y-8">
+            <div className="">
+              <p className="text-2xl font-bold ">Uh oh,</p>
+              <p className="text-2xl font-bold ">
+                It seems that the kanji
+                <br /> you&apos;re looking for
+                <br /> cannot be found.
+              </p>
+            </div>
+
+            <div className="items-start">
+              <button
+                className="px-4 py-1 text-sm font-bold transition duration-200 ease-in-out bg-teal-600 rounded cursor-pointer gap-x-2 hover:bg-teal-700"
+                onClick={() => router.back()}
+              >
+                Go back
+              </button>
+            </div>
+          </div>
+        </div>
+      </PageLayout>
+    );
 
   const playAudio = (audioId) => {
     const audio = document.getElementById(audioId);

@@ -5,8 +5,13 @@ import PageLayout from "../../components/PageLayout";
 const KanjiList = ({ data }) => {
   if (data.length === 0)
     return (
-      <PageLayout>
-        <p>No Data found</p>
+      <PageLayout pageTitle="Search Result">
+        <div className="mb-4">
+          <h2 className="text-xl font-semibold ">Search Results</h2>
+          <p className="text-sm italic text-neutral-400">
+            Found {data.length.toString()} matches
+          </p>
+        </div>
       </PageLayout>
     );
 
