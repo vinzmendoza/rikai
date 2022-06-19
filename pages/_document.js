@@ -15,7 +15,7 @@ class MyDocument extends Document {
             href="/fonts/MPLUS1-Light.ttf"
             as="font"
             type="font/ttf"
-            crossOrigin
+            crossOrigin="true"
           />
         </Head>
         <body className="bg-neutral-900 text-neutral-50">
