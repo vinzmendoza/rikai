@@ -6,7 +6,7 @@ import { Cross2Icon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
 
 import SearchFields from "./SearchFields";
 import ScrollArea from "./ScrollArea";
-import { useSearch } from "../utils/context/search";
+import { useSearch } from "../utils/context/SearchContext";
 
 const Search = () => {
   const { searchValue, pathname } = useSearch();

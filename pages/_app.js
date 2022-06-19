@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { SearchProvider } from "../utils/context/search";
+import { SearchProvider } from "../utils/context/SearchContext";
 import { VideoProvider } from "../utils/context/Video";
 
 function MyApp({ Component, pageProps }) {
