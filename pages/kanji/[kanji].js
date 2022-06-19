@@ -17,13 +17,11 @@ const KanjiInfo = ({ data }) => {
     audio.play();
   };
 
-  console.log(data);
-
   return (
     <PageLayout pageTitle={data.kanji.character}>
       <div className="mb-16">
         <button
-          className="flex flex-row items-center transition duration-200 ease-in-out hover:text-neutral-400"
+          className="flex flex-row items-center transition duration-200 ease-in-out hover:text-teal-400"
           onClick={() => router.back()}
         >
           <ArrowLeftIcon className="w-6 h-6 mr-2" /> Back
