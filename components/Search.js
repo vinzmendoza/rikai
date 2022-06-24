@@ -185,7 +185,7 @@ const Search = () => {
                   onClick={handleSubmit(onSearch)}
                   className="flex justify-center w-full p-2 font-bold transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-600"
                 >
-                  Submit
+                  Search
                 </button>
               </DialogPrimitive.Close>
             </div>
