@@ -157,8 +157,8 @@ const Search = () => {
           </button>
         </DialogPrimitive.Trigger>
         <DialogPrimitive.Portal>
-          <DialogPrimitive.Overlay className="fixed inset-0 bg-neutral-900/75 sm:hidden" />
-          <DialogPrimitive.Content className="fixed bottom-0 flex flex-col justify-between w-full p-4 rounded h-3/4 bg-neutral-800 animate-slide-up sm:hidden">
+          <DialogPrimitive.Overlay className="fixed inset-0 bg-neutral-900/75 sm:hidden z-[60]" />
+          <DialogPrimitive.Content className="fixed bottom-0 flex flex-col justify-between w-full p-4 rounded h-3/4 bg-neutral-800 animate-slide-up sm:hidden z-[70]">
             <DialogPrimitive.Title className="text-xl font-bold">
               Search
             </DialogPrimitive.Title>
